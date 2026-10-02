@@ -1,0 +1,43 @@
+# Whitelist: ignore everything at the top level, then re-include what is published.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/LICENSE
+!/requirements.txt
+!/LEARNINGS.md
+!/run_step2.bat
+!/run_step3.bat
+!/run_step10.bat
+!/src/
+!/third_party/
+!/data/
+!/results/
+!/submissions/
+!/paper/
+# local helpers
+/_to_delete/
+
+__pycache__/
+*.pyc
+
+# Data: only the fold assignment is published (MILK10k images/CSVs come from ISIC)
+/data/*
+!/data/folds.csv
+
+# PanDerm code (CC-BY-NC-ND 4.0) and weights are not redistributed; see README
+/third_party/panderm/modeling_finetune.py
+
+# Results: only summaries
+/results/*
+!/results/*/
+/results/step10_smoke/
+/results/docker_rank16/
+/results/*/*
+!/results/*/README.md
+!/results/*/summary.csv
+!/results/*/metrics.json
+!/results/step10/curves.png
+
+# Submissions: log and leaderboard notes only (no test-set prediction files)
+/submissions/*.csv

@@ -1,0 +1,691 @@
+{
+ "ft_panderm_b__s0": {
+  "raw": 0.5266314918126901,
+  "argmax": 0.5220105549483306,
+  "calib": 0.5449321035022133,
+  "calib_ci95": [
+   0.5223551706370702,
+   0.566111482369243
+  ],
+  "calib_fold_sd": 0.02052486181744594,
+  "calib_per_class": {
+   "AKIEC": 0.558,
+   "BCC": 0.906,
+   "BEN_OTH": 0.252,
+   "BKL": 0.521,
+   "DF": 0.624,
+   "INF": 0.225,
+   "MAL_OTH": 0.015,
+   "MEL": 0.654,
+   "NV": 0.784,
+   "SCCKA": 0.696,
+   "VASC": 0.759
+  },
+  "argmax_balanced_recall": 0.572029227491901,
+  "delta_vs_step1_lgbm__demo_monet_manip": 0.1822854866736598,
+  "delta_vs_step1_lgbm__demo_monet_manip_ci95": [
+   0.15654159913846868,
+   0.20698850315780806
+  ],
+  "delta_vs_frozen_panderm_b__crop__der": 0.10671911037909715,
+  "delta_vs_frozen_panderm_b__crop__der_ci95": [
+   0.08327720519235632,
+   0.12913223880306518
+  ],
+  "delta_vs_frozen_panderm_b__crop__both_meta": 0.09211966934764543,
+  "delta_vs_frozen_panderm_b__crop__both_meta_ci95": [
+   0.06873195609559828,
+   0.1155475040266721
+  ],
+  "args": {
+   "backbones": [
+    "eva02_b",
+    "panderm_b"
+   ],
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "epochs": 25,
+   "warmup": 2,
+   "batch": 64,
+   "lr": 0.0001,
+   "min_lr": 1e-06,
+   "layer_decay": 0.75,
+   "wd": 0.05,
+   "drop_path": 0.1,
+   "head_drop": 0.0,
+   "clip": 1.0,
+   "loss": "la",
+   "tau": 1.0,
+   "beta": 0.5,
+   "gamma": 2.0,
+   "smoothing": 0.0,
+   "tta": true,
+   "workers": 8,
+   "save_ckpt": false,
+   "overwrite": false,
+   "tag": "",
+   "id_col": "lesion_id",
+   "limit": 0,
+   "no_pretrained": false
+  }
+ },
+ "_thresholds": {
+  "ft_panderm_b": {
+   "AKIEC": 0.3452,
+   "BCC": 0.084,
+   "BEN_OTH": 0.3983,
+   "BKL": 0.2262,
+   "DF": 0.5314,
+   "INF": 0.3302,
+   "MAL_OTH": 0.2761,
+   "MEL": 0.4003,
+   "NV": 0.1008,
+   "SCCKA": 0.4916,
+   "VASC": 0.7489
+  },
+  "ft_dinov2_b": {
+   "AKIEC": 0.3789,
+   "BCC": 0.0549,
+   "BEN_OTH": 0.5308,
+   "BKL": 0.4201,
+   "DF": 0.5365,
+   "INF": 0.1962,
+   "MAL_OTH": 0.7396,
+   "MEL": 0.3708,
+   "NV": 0.2518,
+   "SCCKA": 0.5843,
+   "VASC": 0.6343
+  },
+  "ft_eva02_b": {
+   "AKIEC": 0.3856,
+   "BCC": 0.1894,
+   "BEN_OTH": 0.4145,
+   "BKL": 0.226,
+   "DF": 0.7653,
+   "INF": 0.214,
+   "MAL_OTH": 0.7277,
+   "MEL": 0.2988,
+   "NV": 0.2893,
+   "SCCKA": 0.4698,
+   "VASC": 0.6769
+  }
+ },
+ "ft_dinov2_b__s0": {
+  "raw": 0.525473868423308,
+  "argmax": 0.5235748209982461,
+  "calib": 0.5314540511005886,
+  "calib_ci95": [
+   0.5089006166118794,
+   0.5506158147003017
+  ],
+  "calib_fold_sd": 0.014418952991066472,
+  "calib_per_class": {
+   "AKIEC": 0.571,
+   "BCC": 0.911,
+   "BEN_OTH": 0.186,
+   "BKL": 0.572,
+   "DF": 0.417,
+   "INF": 0.229,
+   "MAL_OTH": 0.022,
+   "MEL": 0.662,
+   "NV": 0.792,
+   "SCCKA": 0.709,
+   "VASC": 0.776
+  },
+  "argmax_balanced_recall": 0.568622741278356,
+  "delta_vs_step1_lgbm__demo_monet_manip": 0.1688074342720351,
+  "delta_vs_step1_lgbm__demo_monet_manip_ci95": [
+   0.14194424402507436,
+   0.1920660318241005
+  ],
+  "delta_vs_frozen_dinov2_b__crop__der": 0.10503878462539906,
+  "delta_vs_frozen_dinov2_b__crop__der_ci95": [
+   0.08330620178518236,
+   0.1269764043134948
+  ],
+  "delta_vs_frozen_panderm_b__crop__both_meta": 0.07864161694602073,
+  "delta_vs_frozen_panderm_b__crop__both_meta_ci95": [
+   0.05398127304111854,
+   0.10405998106739839
+  ],
+  "args": {
+   "backbones": [
+    "panderm_b",
+    "dinov2_b"
+   ],
+   "seeds": [
+    0
+   ],
+   "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "epochs": 25,
+   "warmup": 2,
+   "batch": 64,
+   "lr": 0.0001,
+   "min_lr": 1e-06,
+   "layer_decay": 0.75,
+   "wd": 0.05,
+   "drop_path": 0.1,
+   "head_drop": 0.0,
+   "clip": 1.0,
+   "loss": "la",
+   "tau": 1.0,
+   "beta": 0.5,
+   "gamma": 2.0,
+   "smoothing": 0.0,
+   "tta": true,
+   "workers": 8,
+   "save_ckpt": false,
+   "overwrite": false,
+   "tag": "",
+   "id_col": "lesion_id",
+   "limit": 0,
+   "no_pretrained": false
+  }
+ },
+ "_diff_ft_panderm_b_minus_ft_dinov2_b": {
+  "delta": 0.013478052401624696,
+  "ci95": [
+   -0.005035533033919616,
+   0.03214551791618109
+  ],
+  "seeds": [
+   0
+  ]
+ },
+ "ft_eva02_b__s0": {
+  "raw": 0.5391325273580447,
+  "argmax": 0.5278012637201531,
+  "calib": 0.5510466429386786,
+  "calib_ci95": [
+   0.5184308762486279,
+   0.5805193888038535
+  ],
+  "calib_fold_sd": 0.014597107004148485,
+  "calib_per_class": {
+   "AKIEC": 0.506,
+   "BCC": 0.902,
+   "BEN_OTH": 0.243,
+   "BKL": 0.529,
+   "DF": 0.592,
+   "INF": 0.233,
+   "MAL_OTH": 0.174,
+   "MEL": 0.653,
+   "NV": 0.776,
+   "SCCKA": 0.705,
+   "VASC": 0.747
+  },
+  "argmax_balanced_recall": 0.5901971993799348,
+  "delta_vs_step1_lgbm__demo_monet_manip": 0.18840002611012502,
+  "delta_vs_step1_lgbm__demo_monet_manip_ci95": [
+   0.1549268000872159,
+   0.21824694695640268
+  ],
+  "delta_vs_frozen_eva02_b__crop__der": 0.1499854354118494,
+  "delta_vs_frozen_eva02_b__crop__der_ci95": [
+   0.1196209799382291,
+   0.18107578984936315
+  ],
+  "delta_vs_frozen_panderm_b__crop__both_meta": 0.09823420878411065,
+  "delta_vs_frozen_panderm_b__crop__both_meta_ci95": [
+   0.06591943201514056,
+   0.12938831988812258
+  ],
+  "args": {
+   "backbones": [
+    "eva02_b",
+    "panderm_b"
+   ],
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "epochs": 25,
+   "warmup": 2,
+   "batch": 64,
+   "lr": 0.0001,
+   "min_lr": 1e-06,
+   "layer_decay": 0.75,
+   "wd": 0.05,
+   "drop_path": 0.1,
+   "head_drop": 0.0,
+   "clip": 1.0,
+   "loss": "la",
+   "tau": 1.0,
+   "beta": 0.5,
+   "gamma": 2.0,
+   "smoothing": 0.0,
+   "tta": true,
+   "workers": 8,
+   "save_ckpt": false,
+   "overwrite": false,
+   "tag": "",
+   "id_col": "lesion_id",
+   "limit": 0,
+   "no_pretrained": false
+  }
+ },
+ "_diff_ft_eva02_b_minus_ft_panderm_b": {
+  "delta": 0.011846489950561145,
+  "ci95": [
+   -0.01320487323759765,
+   0.03751529324745466
+  ],
+  "seeds": [
+   0,
+   1,
+   2
+  ]
+ },
+ "_diff_ft_eva02_b_minus_ft_dinov2_b": {
+  "delta": 0.019592591838089923,
+  "ci95": [
+   -0.009724970695071743,
+   0.04860256931362238
+  ],
+  "seeds": [
+   0
+  ]
+ },
+ "ft_eva02_b__s1": {
+  "raw": 0.5352029646654937,
+  "argmax": 0.5213493241274786,
+  "calib": 0.5416568400632197,
+  "calib_ci95": [
+   0.5125745760045102,
+   0.5669224782390817
+  ],
+  "calib_fold_sd": 0.01652265964551386,
+  "calib_per_class": {
+   "AKIEC": 0.535,
+   "BCC": 0.907,
+   "BEN_OTH": 0.25,
+   "BKL": 0.524,
+   "DF": 0.565,
+   "INF": 0.277,
+   "MAL_OTH": 0.067,
+   "MEL": 0.651,
+   "NV": 0.793,
+   "SCCKA": 0.695,
+   "VASC": 0.695
+  },
+  "argmax_balanced_recall": 0.592484817649465,
+  "delta_vs_step1_lgbm__demo_monet_manip": 0.17901022323466614,
+  "delta_vs_step1_lgbm__demo_monet_manip_ci95": [
+   0.14778285086165419,
+   0.2069819359001584
+  ],
+  "delta_vs_frozen_eva02_b__crop__der": 0.1405956325363905,
+  "delta_vs_frozen_eva02_b__crop__der_ci95": [
+   0.1147753336394555,
+   0.16480797425495367
+  ],
+  "delta_vs_frozen_panderm_b__crop__both_meta": 0.08884440590865178,
+  "delta_vs_frozen_panderm_b__crop__both_meta_ci95": [
+   0.06161693469898137,
+   0.11410483151919196
+  ],
+  "args": {
+   "backbones": [
+    "eva02_b",
+    "panderm_b"
+   ],
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "epochs": 25,
+   "warmup": 2,
+   "batch": 64,
+   "lr": 0.0001,
+   "min_lr": 1e-06,
+   "layer_decay": 0.75,
+   "wd": 0.05,
+   "drop_path": 0.1,
+   "head_drop": 0.0,
+   "clip": 1.0,
+   "loss": "la",
+   "tau": 1.0,
+   "beta": 0.5,
+   "gamma": 2.0,
+   "smoothing": 0.0,
+   "tta": true,
+   "workers": 8,
+   "save_ckpt": false,
+   "overwrite": false,
+   "tag": "",
+   "id_col": "lesion_id",
+   "limit": 0,
+   "no_pretrained": false
+  }
+ },
+ "ft_eva02_b__s2": {
+  "raw": 0.5388826322044341,
+  "argmax": 0.5310448053234472,
+  "calib": 0.5401565743436788,
+  "calib_ci95": [
+   0.5151266986733923,
+   0.5627332170639772
+  ],
+  "calib_fold_sd": 0.01779306610563655,
+  "calib_per_class": {
+   "AKIEC": 0.542,
+   "BCC": 0.902,
+   "BEN_OTH": 0.205,
+   "BKL": 0.565,
+   "DF": 0.59,
+   "INF": 0.246,
+   "MAL_OTH": 0.048,
+   "MEL": 0.651,
+   "NV": 0.78,
+   "SCCKA": 0.7,
+   "VASC": 0.711
+  },
+  "argmax_balanced_recall": 0.5956429062330457,
+  "delta_vs_step1_lgbm__demo_monet_manip": 0.17750995751512527,
+  "delta_vs_step1_lgbm__demo_monet_manip_ci95": [
+   0.1478292352705524,
+   0.20250834578407548
+  ],
+  "delta_vs_frozen_eva02_b__crop__der": 0.13909536681684964,
+  "delta_vs_frozen_eva02_b__crop__der_ci95": [
+   0.11620057382454697,
+   0.16117185855079527
+  ],
+  "delta_vs_frozen_panderm_b__crop__both_meta": 0.08734414018911091,
+  "delta_vs_frozen_panderm_b__crop__both_meta_ci95": [
+   0.06374011963702149,
+   0.11222394311340002
+  ],
+  "args": {
+   "backbones": [
+    "eva02_b",
+    "panderm_b"
+   ],
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "epochs": 25,
+   "warmup": 2,
+   "batch": 64,
+   "lr": 0.0001,
+   "min_lr": 1e-06,
+   "layer_decay": 0.75,
+   "wd": 0.05,
+   "drop_path": 0.1,
+   "head_drop": 0.0,
+   "clip": 1.0,
+   "loss": "la",
+   "tau": 1.0,
+   "beta": 0.5,
+   "gamma": 2.0,
+   "smoothing": 0.0,
+   "tta": true,
+   "workers": 8,
+   "save_ckpt": false,
+   "overwrite": false,
+   "tag": "",
+   "id_col": "lesion_id",
+   "limit": 0,
+   "no_pretrained": false
+  }
+ },
+ "ft_eva02_b__seedens": {
+  "raw": 0.5475049483067947,
+  "argmax": 0.5349985079850327,
+  "calib": 0.5597531827295226,
+  "calib_ci95": [
+   0.5301813290166365,
+   0.5858392968859014
+  ],
+  "calib_fold_sd": 0.020314417466299837,
+  "calib_per_class": {
+   "AKIEC": 0.54,
+   "BCC": 0.907,
+   "BEN_OTH": 0.256,
+   "BKL": 0.556,
+   "DF": 0.559,
+   "INF": 0.26,
+   "MAL_OTH": 0.16,
+   "MEL": 0.654,
+   "NV": 0.792,
+   "SCCKA": 0.711,
+   "VASC": 0.763
+  },
+  "argmax_balanced_recall": 0.5994355549507641,
+  "seeds": [
+   0,
+   1,
+   2
+  ]
+ },
+ "ft_panderm_b__s1": {
+  "raw": 0.5344263789725404,
+  "argmax": 0.5134255249080156,
+  "calib": 0.5240122075499009,
+  "calib_ci95": [
+   0.5011508998636132,
+   0.5441811920629726
+  ],
+  "calib_fold_sd": 0.014376414314499101,
+  "calib_per_class": {
+   "AKIEC": 0.536,
+   "BCC": 0.907,
+   "BEN_OTH": 0.214,
+   "BKL": 0.533,
+   "DF": 0.472,
+   "INF": 0.208,
+   "MAL_OTH": 0.013,
+   "MEL": 0.65,
+   "NV": 0.789,
+   "SCCKA": 0.689,
+   "VASC": 0.753
+  },
+  "argmax_balanced_recall": 0.5486926078613401,
+  "delta_vs_step1_lgbm__demo_monet_manip": 0.16136559072134732,
+  "delta_vs_step1_lgbm__demo_monet_manip_ci95": [
+   0.13550849022829062,
+   0.18448374800079442
+  ],
+  "delta_vs_frozen_panderm_b__crop__der": 0.08579921442678468,
+  "delta_vs_frozen_panderm_b__crop__der_ci95": [
+   0.06519199099481401,
+   0.10753847734953084
+  ],
+  "delta_vs_frozen_panderm_b__crop__both_meta": 0.07119977339533295,
+  "delta_vs_frozen_panderm_b__crop__both_meta_ci95": [
+   0.046104066125102434,
+   0.09572232567565239
+  ],
+  "args": {
+   "backbones": [
+    "eva02_b",
+    "panderm_b"
+   ],
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "epochs": 25,
+   "warmup": 2,
+   "batch": 64,
+   "lr": 0.0001,
+   "min_lr": 1e-06,
+   "layer_decay": 0.75,
+   "wd": 0.05,
+   "drop_path": 0.1,
+   "head_drop": 0.0,
+   "clip": 1.0,
+   "loss": "la",
+   "tau": 1.0,
+   "beta": 0.5,
+   "gamma": 2.0,
+   "smoothing": 0.0,
+   "tta": true,
+   "workers": 8,
+   "save_ckpt": false,
+   "overwrite": false,
+   "tag": "",
+   "id_col": "lesion_id",
+   "limit": 0,
+   "no_pretrained": false
+  }
+ },
+ "ft_panderm_b__s2": {
+  "raw": 0.531321169152529,
+  "argmax": 0.5219325041338291,
+  "calib": 0.5428717572590636,
+  "calib_ci95": [
+   0.5182893952144878,
+   0.5648852013039535
+  ],
+  "calib_fold_sd": 0.025262166190341596,
+  "calib_per_class": {
+   "AKIEC": 0.539,
+   "BCC": 0.909,
+   "BEN_OTH": 0.262,
+   "BKL": 0.542,
+   "DF": 0.545,
+   "INF": 0.252,
+   "MAL_OTH": 0.016,
+   "MEL": 0.654,
+   "NV": 0.801,
+   "SCCKA": 0.696,
+   "VASC": 0.756
+  },
+  "argmax_balanced_recall": 0.5656339535604785,
+  "delta_vs_step1_lgbm__demo_monet_manip": 0.18022514043051002,
+  "delta_vs_step1_lgbm__demo_monet_manip_ci95": [
+   0.15137910956571704,
+   0.20392434587521796
+  ],
+  "delta_vs_frozen_panderm_b__crop__der": 0.10465876413594738,
+  "delta_vs_frozen_panderm_b__crop__der_ci95": [
+   0.082461300401117,
+   0.126303131752433
+  ],
+  "delta_vs_frozen_panderm_b__crop__both_meta": 0.09005932310449566,
+  "delta_vs_frozen_panderm_b__crop__both_meta_ci95": [
+   0.06607522748556452,
+   0.11424314520411728
+  ],
+  "args": {
+   "backbones": [
+    "eva02_b",
+    "panderm_b"
+   ],
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "epochs": 25,
+   "warmup": 2,
+   "batch": 64,
+   "lr": 0.0001,
+   "min_lr": 1e-06,
+   "layer_decay": 0.75,
+   "wd": 0.05,
+   "drop_path": 0.1,
+   "head_drop": 0.0,
+   "clip": 1.0,
+   "loss": "la",
+   "tau": 1.0,
+   "beta": 0.5,
+   "gamma": 2.0,
+   "smoothing": 0.0,
+   "tta": true,
+   "workers": 8,
+   "save_ckpt": false,
+   "overwrite": false,
+   "tag": "",
+   "id_col": "lesion_id",
+   "limit": 0,
+   "no_pretrained": false
+  }
+ },
+ "ft_panderm_b__seedens": {
+  "raw": 0.5346274488224435,
+  "argmax": 0.5268520775957254,
+  "calib": 0.5479066927789614,
+  "calib_ci95": [
+   0.5231860605544492,
+   0.5703514101730472
+  ],
+  "calib_fold_sd": 0.016802958655663686,
+  "calib_per_class": {
+   "AKIEC": 0.543,
+   "BCC": 0.91,
+   "BEN_OTH": 0.23,
+   "BKL": 0.551,
+   "DF": 0.583,
+   "INF": 0.28,
+   "MAL_OTH": 0.016,
+   "MEL": 0.654,
+   "NV": 0.802,
+   "SCCKA": 0.677,
+   "VASC": 0.782
+  },
+  "argmax_balanced_recall": 0.5620586390624861,
+  "seeds": [
+   0,
+   1,
+   2
+  ]
+ }
+}
